@@ -1,0 +1,192 @@
+[
+  {
+    "ContainingType": "ACCOUNT.MANAGER.API.Controllers.AccountController",
+    "Method": "LogIn",
+    "RelativePath": "api/Account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credencialesUsuario",
+        "Type": "ACCOUNT.MANAGER.API.Data.Models.ParametersEndPoints.Account.UserCredentials",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ACCOUNT.MANAGER.API.Data.Models.ResponsesEndPoints.Account.Authentication",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ACCOUNT.MANAGER.API.Controllers.AccountController",
+    "Method": "SingUp",
+    "RelativePath": "api/Account/singup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userCredentials",
+        "Type": "ACCOUNT.MANAGER.API.Data.Models.ParametersEndPoints.Account.UserCredentials",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ACCOUNT.MANAGER.API.Data.Models.ResponsesEndPoints.Account.Authentication",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ACCOUNT.MANAGER.API.Controllers.ClienteController",
+    "Method": "CreateCliente",
+    "RelativePath": "api/Cliente/CreateCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "ACCOUNT.MANAGER.API.Data.Models.ParametersEndPoints.Utilidades.ClienteInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ACCOUNT.MANAGER.API.Controllers.ClienteController",
+    "Method": "GetAllClientes",
+    "RelativePath": "api/Cliente/GetAllClientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conexion",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ACCOUNT.MANAGER.API.Controllers.ClienteController",
+    "Method": "GetClienteByCodigo",
+    "RelativePath": "api/Cliente/GetClienteByCodigo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conexion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ACCOUNT.MANAGER.API.Controllers.ClienteController",
+    "Method": "UpdateCliente",
+    "RelativePath": "api/Cliente/UpdateCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "ACCOUNT.MANAGER.API.Data.Models.ParametersEndPoints.Utilidades.ClienteUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ACCOUNT.MANAGER.API.Controllers.TerceroController",
+    "Method": "CreateTercero",
+    "RelativePath": "api/Tercero/CreateTercero",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tercero",
+        "Type": "ACCOUNT.MANAGER.API.Data.Models.ParametersEndPoints.Utilidades.TerceroInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ACCOUNT.MANAGER.API.Controllers.TerceroController",
+    "Method": "GetAllTerceros",
+    "RelativePath": "api/Tercero/GetAllTerceros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conexion",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ACCOUNT.MANAGER.API.Controllers.TerceroController",
+    "Method": "GetTerceroByCodigo",
+    "RelativePath": "api/Tercero/GetTerceroByCodigo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conexion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ACCOUNT.MANAGER.API.Controllers.TerceroController",
+    "Method": "UpdateTercero",
+    "RelativePath": "api/Tercero/UpdateTercero",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tercero",
+        "Type": "ACCOUNT.MANAGER.API.Data.Models.ParametersEndPoints.Utilidades.TerceroUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,6 @@
+@ACCOUNT.MANAGER.API_HostAddress = http://localhost:5275
+
+GET {{ACCOUNT.MANAGER.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
